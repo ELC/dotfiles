@@ -112,7 +112,7 @@ set $workspace1 1: Browser 
 set $workspace2 2: Chat 
 set $workspace3 3: Multimedia
 set $workspace4 4: Folders 
-set $workspace5 5:
+set $workspace5 prueba
 set $workspace6 6: Music 
 set $workspace7 7: Terminals 
 set $workspace8 8: Develop 
@@ -124,7 +124,7 @@ bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
-bindsym $mod+5 workspace $workspace5 
+bindsym $mod+5 workspace number 5 code
 bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
@@ -136,7 +136,7 @@ bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+5 move container to workspace number 5 code
 bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
@@ -243,8 +243,8 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
 bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 20"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 20"
+bindsym XF86MonBrightnessUp exec xbacklight -inc 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 1
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
