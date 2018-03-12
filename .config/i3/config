@@ -149,8 +149,6 @@ bindsym Print exec scrot -q 100 '%Y.%m.%d_%H.%M.%S.png' -e 'mv $f ~/Pictures/scr
 
 bindsym $mod+Print exec scrot -u -q 100 '%Y.%m.%d_%H.%M.%S.png' -e 'mv $f ~/Pictures/screenshots/'
 
-bindsym $mod+shift+Print exec scrot -s -q 100 '%Y.%m.%d_%H.%M.%S.png' -e 'mv $f ~/Pictures/screenshots/'
-
 bindsym $mod+Shift+Print exec \
     import -window $( \
         i3-msg -t get_tree | \
