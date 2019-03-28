@@ -118,5 +118,5 @@ fi
 
 # added by Anaconda3 installer
 export PATH="/home/ezequiel/anaconda3/bin:$PATH"
+export PATH="/home/ezequiel/Programs/Telegram:$PATH"
 
-zsh

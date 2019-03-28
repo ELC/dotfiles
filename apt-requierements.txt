@@ -1,6 +1,0 @@
-feh
-alsa-utils
-pulseaudio
-rofi
-i3blocks
-scrot

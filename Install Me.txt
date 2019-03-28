@@ -1,0 +1,67 @@
+Apt Install:
+
+- feh
+- alsa-utils
+- pulseaudio
+- rofi
+- i3blocks
+- scrot
+- compton
+- zsh
+- wget
+- git
+- xbacklight
+- vlc
+- pavucontrol
+- numlockx
+- vim
+
+Fonts:
+- fonts-firacode
+- fonts-font-awesome
+- ttf-ancient-fonts
+- fonts-powerline
+
+
+
+Manually Install:
+
+- Gitkraken
+- Telegram
+- Teamviewer
+- Skype
+- Google Chrome
+- Anaconda3
+- VS Code
+    - Use Config Sync
+
+
+
+To install Oh My zsh
+
+- wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+
+For share repositories with Windows run:
+- git config core.filemode false
+
+
+Also run:
+
+- dircolors -p > ~/.dir_colors/dircolors
+- xrdb -merge .Xresources
+
+
+
+For notebooks (enable tap to clic on touchpad):
+
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo touch /etc/X11/xorg.conf.d/90-touchpad.conf
+
+Write inside:
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection

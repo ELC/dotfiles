@@ -60,7 +60,12 @@ ZSH_THEME="bullet-train"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-completions
 )
+
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,10 +96,10 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 export PATH=~/anaconda3/bin:$PATH
-export PATH=~/.telegram:$PATH
+export PATH=~/Programs/Telegram:$PATH
 clear
-alias zshconfig="nano ~/.zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
-alias i3config="vi ~/.config/i3/config"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias i3config="vim ~/.config/i3/config"
 
 eval `dircolors ~/.dir_colors/dircolors`
