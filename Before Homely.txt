@@ -1,32 +1,6 @@
-Apt Install:
-
-- feh
-- alsa-utils
-- pulseaudio
-- rofi
-- i3blocks
-- scrot
-- compton
-- zsh
-- wget
-- git
-- xbacklight
-- vlc
-- pavucontrol
-- numlockx
-- vim
-
-Fonts:
-- fonts-firacode
-- fonts-font-awesome
-- ttf-ancient-fonts
-- fonts-powerline
-
-
-
 Manually Install:
 
-- Gitkraken
+- Gitkraken (AVOID UBUNTU SOFTWARE)
 - Telegram
 - Teamviewer
 - Skype
@@ -36,21 +10,25 @@ Manually Install:
     - Use Config Sync
 
 
+For share repositories with Windows run:
+- git config core.filemode false
+
+
+Only Once:
+
 
 To install Oh My zsh
 
 - wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
+Change Default Shell
 
-For share repositories with Windows run:
-- git config core.filemode false
-
+- sudo chsh -s /bin/zsh ezequiel
 
 Also run:
 
 - dircolors -p > ~/.dir_colors/dircolors
 - xrdb -merge .Xresources
-
 
 
 For notebooks (enable tap to clic on touchpad):
