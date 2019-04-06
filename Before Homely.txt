@@ -12,10 +12,15 @@ Manually Install:
 
 For share repositories with Windows run:
 - git config core.filemode false
+- git config --global core.autocrlf true
 
 
 Only Once:
 
+To mount partition automatically:
+- sudo fdisk -l
+- sudo blkid
+- sudo nano /etc/fstab # Add the line following the pattern with "errors=remount-ro,auto,exec,rw,user"
 
 To install Oh My zsh
 

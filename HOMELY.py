@@ -22,7 +22,7 @@ dotfiles = {
 
 for source, target in dotfiles.items():
 
-    execute(['rm', '-f', source])
+    execute(['rm', '-f', target])
 
     symlink(source, target)
 
