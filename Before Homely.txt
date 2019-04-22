@@ -6,6 +6,7 @@ Manually Install:
 - Skype
 - Google Chrome
 - Anaconda3
+- RescueTime
 - VS Code
     - Use Config Sync
 
